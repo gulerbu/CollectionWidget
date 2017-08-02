@@ -1,3 +1,14 @@
+/*
+ * Copyright 2003-2017 Monitise Group Limited. All Rights Reserved.
+ *
+ * Save to the extent permitted by law, you may not use, copy, modify,
+ * distribute or create derivative works of this material or any part
+ * of it without the prior written consent of Monitise Group Limited.
+ * Any reproduction of this material must contain this notice.
+ */
+
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
 
 buildscript {
@@ -5,7 +16,7 @@ buildscript {
         jcenter()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:2.3.3'
+        classpath 'com.android.tools.build:gradle:2.3.2'
 
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files

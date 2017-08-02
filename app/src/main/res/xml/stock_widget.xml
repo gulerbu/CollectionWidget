@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <!--
   ~ Copyright 2003-2017 Monitise Group Limited. All Rights Reserved.
   ~
@@ -7,9 +8,12 @@
   ~ Any reproduction of this material must contain this notice.
   -->
 
-<resources>
-    <string name="app_name">CollectionWidget</string>
-    <string name="widget_title">Stocks</string>
-    <string name="detailed_view_text">%1$s is clicked for detail</string>
-    <string name="no_stock_message">There is no stock to display</string>
-</resources>
+<appwidget-provider
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:initialLayout="@layout/layout_stock_widget"
+    android:minHeight="300dp"
+    android:minWidth="300dp"
+    android:resizeMode="horizontal|vertical"
+    android:updatePeriodMillis="86400000">
+
+</appwidget-provider>

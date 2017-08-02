@@ -20,6 +20,32 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <receiver android:name=".stockwidget.StockWidgetProvider">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/stock_widget"/>
+        </receiver>
+
+        <!--android.permission.BIND_REMOTEVIEWS prevents applications from freely accessing your app widget's data-->
+        <service
+            android:name=".stockwidget.StockWidgetService"
+            android:permission="android.permission.BIND_REMOTEVIEWS"/>
+
+        <activity android:name=".StockDetailActivity">
+        </activity>
+
     </application>
 
 </manifest>
